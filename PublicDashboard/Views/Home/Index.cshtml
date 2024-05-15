@@ -1,0 +1,33 @@
+﻿@{
+    ViewData["Title"] = "ePTS Performance Tracking System Dashboard";
+}
+
+<div class="iframe-container">
+    <iframe id="iFrame"
+            style="position: absolute; height: 100vh; width:100%; border: none; display:block;"
+            src="Replace with Link"
+            frameborder="0"
+            powerbi-settings-nav-content-pane-enabled="true"
+            powerbi-settings-filter-pane-enabled="true"
+            filterPaneEnabled="true"
+            navContentPaneEnabled="true"
+            title="ePTS Performance Tracking System Dashboard"
+            allowFullScreen="true"></iframe>
+</div>
+
+@section Styles {
+}
+
+@section Scripts {
+    <script type="application/javascript">
+        function resizeIFrameToFitContent(iFrame) {
+            iFrame.width  = iFrame.contentWindow.document.body.scrollWidth;
+            iFrame.height = iFrame.contentWindow.document.body.scrollHeight;
+        }
+
+        window.addEventListener('DOMContentLoaded', function(e) {
+            var iFrame = document.getElementById( 'iFrame' );
+            resizeIFrameToFitContent( iFrame );
+        } );
+    </script>
+}

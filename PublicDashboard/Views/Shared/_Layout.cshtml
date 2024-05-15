@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head prefix="og: http://ogp.me/ns#">
+    <!-- Google tag (gtag.js) -->
+    <!-- Replace after handover -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ESVZ43N5PW"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-ESVZ43N5PW');
+    </script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ePTS Performance Tracking System Dashboard</title>
+    <meta name="description" content="The USAID Zambia - Let’s Read Project, is a 5-year project in the five target provinces of Eastern, Muchinga, Southern, Northwestern and Western Zambia that works to improve reading outcomes for approximately 1.4 million children attending pre-primary (kindergarten) through to Grade 3 and provide professional development for teachers to support reading interventions in Zambian public and community schools." />
+    <meta name="keywords" content="USAID Zambia, Zambia, Zambia Let's Read, Zambia Lets Read, Zambia Dashboard, Performance Tracking System Dashboard, Dashboard, EDC, Education Development Center" />
+    <meta name="robots" content="index, follow">
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="USAID | Zambia - Let's Read Performance Tracking System Dashboard" />
+    <meta property="og:url" content="https://epts-edu.grz.gov.zm" />
+    <meta property="og:description" content="The USAID Zambia - Let’s Read Project, is a 5-year project in the five target provinces of Eastern, Muchinga, Southern, Northwestern and Western Zambia that works to improve reading outcomes for approximately 1.4 million children attending pre-primary (kindergarten) through to Grade 3 and provide professional development for teachers to support reading interventions in Zambian public and community schools." />
+    <meta property="og:image" content="http://epts-edu.grz.gov.zm/image/thumbnail300.png" />
+    <meta property="og:image:secure_url" content="https://epts-edu.grz.gov.zm/image/thumbnail300.png" />
+    <meta name="twitter:card" content="https://epts-edu.grz.gov.zm/image/thumbnail300.png" />
+
+    <meta property="og:site_name" content="USAID | Zambia - Let's Read Project" />
+    <meta name="twitter:image:alt" content="Zambia - Let's Read Performance Tracking System Dashboard" />
+    
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/PublicDashboard.styles.css" asp-append-version="true" />
+    <link rel="shortcut icon" href="https://www.edc.org/sites/all/themes/edc/favicon.ico" type="image/vnd.microsoft.icon" />
+    @RenderSection("Styles", required: false)
+</head>
+<body>
+    @RenderBody()
+    
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
